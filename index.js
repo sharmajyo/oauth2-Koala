@@ -25,14 +25,6 @@ var options = {
     app: app
   };
 
-render(app, {
-    root: path.join(__dirname, 'views'),
-    layout: 'layout',
-    viewExt: 'html',
-    cache: false,
-    debug: true
-})
-
 app.use(bodyParser())
 
 router.get('/', routes.site.index);

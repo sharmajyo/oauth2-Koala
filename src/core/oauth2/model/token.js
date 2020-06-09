@@ -22,7 +22,9 @@ const buildJWT = (client) => {
     expiresIn: `${TOKEN_EXPIRY_IN_MINS}m`,
   };
   const tenantClaim = { 
-    'http://ntx.identity/tenant': 'madhax',
+    'http://ntx.identity/tenant': client.tenantId,
+    'http://ntx.identity/user': client.appUser,
+    'http://ntx.identity/roles': ['administrator'],
     scope: client.scopes.join(' '),
     gty: 'client-credentials', 
   };
