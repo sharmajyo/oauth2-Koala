@@ -30,7 +30,7 @@
     "koa-bodyparser": "^4.2.0",
     "koa-ejs": "^4.1.1",
     "koa-router": "^7.4.0",
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "npm": "^6.14.5",
     "oauth2-server": "^3.0.2"
   }
